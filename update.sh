@@ -1,7 +1,7 @@
 #!/bin/sh
 
-go install github.com/cloudflare/cfssl/cmd/cfssl
-go install github.com/cloudflare/cfssl/cmd/cfssljson
+go get github.com/cloudflare/cfssl/cmd/cfssl
+go get github.com/cloudflare/cfssl/cmd/cfssljson
 go build fmt.go
 
 exec > Makefile
