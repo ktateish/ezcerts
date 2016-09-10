@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
-	"strings"
-	"regexp"
+	"fmt"
 	"os"
+	"regexp"
+	"strings"
 )
 
 func main() {
@@ -17,7 +17,7 @@ func main() {
 		if ts[0] == "" {
 			entry = append(entry, ts[1:]...)
 		} else {
-			if len(entry) > 0  {
+			if len(entry) > 0 {
 				fmt.Println(entry[0], strings.Join(entry, ","))
 				entry = nil
 			}
